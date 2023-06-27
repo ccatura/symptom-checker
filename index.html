@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
+    <title>UT Symptom Checker</title>
+</head>
+<body>
+    
+<div class="page-container">
+    <div class="left-column">
+        <div class="row-2">
+            <h2>Select Your Symptoms Below</h2>
+        </div>
+            <div class="mosaic-container">
+
+            <!--Wrappers are here so shadow can be applied to clip path if needed.
+            If we don't use the shadow, we can take all the wrappers out
+            for the individual clip paths-->
+                <div id="one" class="tile tile-contents" data-symptom="Difficult Emotions"></div>
+                <h3 id="one-text" class="symptom-text tile-contents" >Difficult<br>Emotions</h3>
+
+
+                <div id="two" class="tile tile-contents" data-symptom="Physical Limitations"></div>
+                <h3 id="two-text" class="symptom-text tile-contents">Physical<br>Limitations</h3>
+
+
+                <div id="three" class="tile"></div>
+
+
+                <div id="four" class="tile"></div>
+
+
+                <div id="five" class="tile"></div>
+
+
+                <div id="six" class="tile tile-contents" data-symptom="Stress / Anxiety"></div>
+                <h3 id="six-text" class="symptom-text tile-contents">Stress /<br>Anxiety</h3>
+
+
+                <div id="seven" class="tile tile-contents" data-symptom="Fatigue"></div>
+                <h3 id="seven-text" class="symptom-text tile-contents">Fatigue</h3>
+
+
+                <div id="eight" class="tile tile-contents" data-symptom="Pain"></div>
+                <h3 id="eight-text" class="symptom-text tile-contents">Pain</h3>
+
+
+                <div id="nine" class="tile tile-contents" data-symptom="Poor Sleep"></div>
+                <h3 id="nine-text" class="symptom-text tile-contents">Poor <br>Sleep</h3>
+
+
+                <div id="ten" class="tile tile-contents" data-symptom="Shortness of Breath"></div>
+                <h3 id="ten-text" class="symptom-text tile-contents">Shortness<br>of Breath</h3>
+
+
+                <div id="eleven" class="tile"></div>
+        </div>
+    </div>
+
+    <div class="left-column-mobile">
+        <div class="row-2">
+            <h2>Select Your Symptoms Below</h2>
+        </div>
+            <div id="one-button" class="symptom" data-symptom="Difficult Emotions">
+                Difficult Emotions
+            </div>
+
+            <div id="two-button" class="symptom" data-symptom="Physical Limitations">
+                Physical Limitations
+            </div>
+
+            <div id="six-button" class="symptom" data-symptom="Stress / Anxiety">
+                Stress / Anxiety
+            </div>
+
+            <div id="seven-button" class="symptom" data-symptom="Fatigue">
+                Fatigue
+            </div>
+
+            <div id="eight-button" class="symptom" data-symptom="Pain">
+                Pain
+            </div>
+
+            <div id="nine-button" class="symptom" data-symptom="Poor Sleep">
+                Poor Sleep
+            </div>
+
+            <div id="ten-button" class="symptom" data-symptom="Shortness of Breath">
+                Shortness of Breath
+            </div>
+
+
+
+    </div>
+
+
+    <div class="right-column">
+        <img width="300px" src="./images/self-health.png" title="NOT FINAL IMAGE">
+        <div class="info-page-one">
+            <h4>See How Our Programs Can Help You Manage Your Chronic Conditions.</h4>
+            <h4>Select Your Symptoms & Press The Find A Program Button Below.</h4>
+            <button class="find" id="submit-symptoms" disabled>Find a Program</button>
+        </div>
+        <div class="info-page-two">
+            <h4>In order to help target the best program, please let us know if either of these are true:".</h4>
+            <div class="questions">
+                <div class="question">
+                    <p>Are you interested in programs focused on managing work-life balance?</p>
+                    <input type="checkbox" class="question-checkbox" id="work-life">
+                    <label for="work-life" class="color-type">Yes</label>
+                </div>
+
+                <div class="question">
+                    <p>Are you interested in programs to help you manage Type 2 Diabetes?</p>
+                    <input type="checkbox" class="question-checkbox" id="diabetes">
+                    <label for="diabetes" class="color-type">Yes</label>
+                </div>
+            </div>
+            <a href="#" onClick="newURL();"><button class="find" id="submit-form">Find a Program</button></a>
+        </div>
+    </div>
+
+    <div class="footer-container">
+        <div class="left-footer-column">
+            <p>For information on other Chronic Condition Programs offered through<br>
+            FCS: /Heather/Chronic-Conditions<br>
+
+            Kristen Johnson PhD, <a href="mailto:kjohn198@tennessee.edu">kjohn198@tennessee.edu</a>
+            <br>
+            Jessica Taylor,  <a href="mailto:jtaylo22@tennessee.edu">jtaylo22@tennessee.edu</a>
+            </p>
+        </div>
+
+        <div class="right-footer-column">
+            <img width="196" height="50" src="./images/UT-Extension_FCS_4c_RGB.png" alt="">
+            <p><a href="https://utia.tennessee.edu/disclaimer-indicia-eeo-statement/">Disclaimer | Indicia | EEO/AA Statement/Non-Discrimination Privacy Policy</a></p>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+</body>
+</html>
